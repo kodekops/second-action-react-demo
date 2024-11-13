@@ -1,0 +1,11 @@
+name: unit testing
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        run: "checking out the code..."
