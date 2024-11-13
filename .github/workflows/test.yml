@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout the code
-        run: echo "checking out the code..."
+        uses: actions/checkout@v4
+      - name: run unit tests
+        run: npm run test --e CI=true
